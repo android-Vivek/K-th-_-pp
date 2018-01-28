@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vivek.hack.katha_app.MainActivity"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="10dp"/>
+
+        <Button
+            android:id="@+id/angry_btn"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/buttonshape"
+            android:onClick="katha"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="पौराणिक कथाएं"
+            android:textColor="#191919"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/angry_b"
+            android:onClick="mantra"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/angry_btn"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="मंत्र लाभ"
+            android:textColor="#191919"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/angry"
+            android:onClick="share"
+            android:layout_below="@+id/angry_btn"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="शेयर ऐप"
+            android:textColor="#191919"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/ang"
+            android:onClick="rateus"
+            android:layout_below="@+id/angry_btn"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="हमें रेटिंग दें"
+            android:textColor="#191919"
+            android:textSize="35sp" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView1"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+        <com.google.android.gms.ads.NativeExpressAdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adUnitId="ca-app-pub-2609666985136692/9921266213"
+            ads:adSize="320x150">
+        </com.google.android.gms.ads.NativeExpressAdView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
